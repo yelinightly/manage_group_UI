@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<RelativeLayout  
+		android:orientation="horizontal"  
+		android:layout_width="fill_parent"  
+		android:layout_height="wrap_content"
+		android:background="@drawable/lightgray" 
+		android:id="@+id/relative_up0">
+	   
+	<TextView 
+		android:id="@+id/name_column0" 
+		android:layout_width="100dp"  
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="10dp"
+		android:text="名称"
+		android:textSize="24dp"
+	 
+	  />
+	<TextView 
+		android:id="@+id/number_column0" 
+		android:layout_width="100dp"  
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_toRightOf="@+id/name_column0"
+		android:layout_marginLeft="10dp"
+		android:text="号码"
+		android:textSize="24dp"
+	
+	  />   
+	<TextView
+		android:id="@+id/gtag_column0"  
+		android:layout_width="100dp"  
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_toRightOf="@+id/number_column0"
+		android:layout_marginLeft="10dp" 
+		android:text="组名"
+		android:textSize="24dp"
+	
+	  />  
+	</RelativeLayout>
+
+	<ListView    
+		android:layout_width="fill_parent"   
+		android:layout_height="fill_parent"   
+		android:id="@android:id/list"
+		android:layout_below="@+id/relative_up0"
+	  />
+
+</RelativeLayout>
+

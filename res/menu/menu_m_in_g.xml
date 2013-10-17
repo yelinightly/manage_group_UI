@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+  
+	<item    
+        android:id="@+id/ming_menu_add"
+        android:showAsAction="withText"
+        android:icon="@drawable/ic_menu_add"
+        android:title="@string/menu_add"
+        />   
+    <item
+        android:id="@+id/menu_group_options"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_menu_star"
+        android:title="@string/menu_star"
+        />        
+    <item
+        android:id="@+id/ming_menu_back"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_menu_back"
+        android:title="@string/menu_back"
+        />
+	<item
+        android:id="@+id/ming_menu_exit"
+        android:showAsAction="withText"
+        android:title="@string/menu_exit"
+        />
+</menu>

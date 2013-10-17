@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/textname_atog"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/member_name_label" />
+        
+        <EditText
+            android:id="@+id/memname_atog"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textname_atog"
+            android:ems="10" >
+        </EditText>
+
+        <TextView
+        	android:id="@+id/textnumber_atog"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+            android:layout_below="@+id/memname_atog"
+        	android:text="@string/member_number_label" />
+        
+        <EditText
+        	android:id="@+id/memnumber_atog"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@+id/textnumber_atog"
+        	android:ems="10" >
+        </EditText>
+
+    </RelativeLayout>    
+
+    <Spinner
+        android:id="@+id/group_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout2" />
+
+    <Button
+        android:id="@+id/addtogroup_button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@color/clear_bgsel"
+        android:text="Add" />
+
+
+</RelativeLayout>
